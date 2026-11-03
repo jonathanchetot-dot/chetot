@@ -125,3 +125,8 @@ footer a{color:var(--gold)}
   .project-banner strong{font-size:1.25rem}
   .contact-card .btn{display:block}
 }
+
+.inline-photo{float:left;width:200px;margin:4px 22px 10px 0}
+.inline-photo img{width:100%;height:auto;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.inline-photo figcaption{text-align:center;font-family:Lora,serif;font-style:italic;font-size:.9rem;margin-top:6px}
+@media(max-width:860px){.inline-photo{width:40%;margin-right:16px}}
