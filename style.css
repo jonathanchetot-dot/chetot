@@ -138,3 +138,18 @@ footer a{color:var(--gold)}
 .inline-photo figcaption{text-align:center;font-family:Lora,serif;font-style:italic;font-size:.9rem;margin-top:6px}
 @media(max-width:860px){.inline-photo{width:40%;margin-right:16px}}
 footer .credit{font-size:.8rem;opacity:.8;margin-top:14px}
+.contact-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;margin-top:28px}
+.contact-actions{display:flex;flex-direction:column;align-items:center;gap:14px;margin-bottom:22px}
+.contact-actions .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:400px;margin:0;font-size:clamp(.7rem,1.4vw,1rem)}
+.contact-email{text-transform:none;letter-spacing:0}
+.contact-email span{overflow-wrap:anywhere;min-width:0}
+.contact-email svg{width:22px;height:22px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.8}
+.facebook-card{min-width:0;padding:24px;background:var(--cream);border-radius:18px}
+.facebook-card h3{font-family:'Lora',serif;margin-bottom:18px}
+.facebook-card p{font-size:.9rem;margin:16px 0 0}
+.facebook-placeholder p{margin:0 0 20px}
+.facebook-card button{font-family:inherit;cursor:pointer;white-space:normal}
+.facebook-card iframe{max-width:100%;border:0;margin:0 auto}
+.facebook-card iframe:not([hidden]){display:block}
+.contact-layout button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media(max-width:860px){.contact-layout{grid-template-columns:1fr;gap:30px}.contact-actions .btn{font-size:clamp(.7rem,3.5vw,1rem)}.facebook-card{padding:20px 12px}}

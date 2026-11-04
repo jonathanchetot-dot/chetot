@@ -137,12 +137,25 @@
       <p class="eyebrow">Contact</p>
       <h2>Nous contacter</h2>
       <p><strong>EARL CHETOT</strong> – Pilat l'Oeuf &amp; Gîte des Racines</p>
-      <address class="contact-card">
-        <a class="btn btn-green" href="tel:+33770813167">Appeler le 07 70 81 31 67</a>
-        <p>560 chemin du Combeau<br>42520 Véranne</p>
-        <p><a href="mailto:earlchetot@pilatloeuf.fr">earlchetot@pilatloeuf.fr</a><br><a href="https://www.facebook.com/profile.php?id=61596272487937" target="_blank" rel="noopener">Suivez-nous sur Facebook</a></p>
-        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=560+chemin+du+Combeau+42520+V%C3%A9ranne" target="_blank" rel="noopener">Voir sur la carte →</a>
-      </address>
+      <div class="contact-layout">
+        <address class="contact-card">
+          <div class="contact-actions">
+            <a class="btn btn-green" href="tel:+33770813167">Appeler le 07 70 81 31 67</a>
+            <a class="btn btn-green contact-email" href="mailto:earlchetot@pilatloeuf.fr"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg><span>earlchetot@pilatloeuf.fr</span></a>
+          </div>
+          <p>560 chemin du Combeau<br>42520 Véranne</p>
+          <a class="maplink" href="https://maps.app.goo.gl/9LdHyd1BddftC3Et5" target="_blank" rel="noopener">Voir sur la carte →</a>
+        </address>
+        <aside class="facebook-card" aria-labelledby="facebook-title">
+          <h3 id="facebook-title">Les nouvelles de la ferme</h3>
+          <div class="facebook-placeholder">
+            <p>Affichez notre page Facebook ici. Son chargement transmet des données à Meta, qui peut utiliser des cookies.</p>
+            <button type="button" class="btn btn-green" onclick="const frame=this.parentElement.nextElementSibling;frame.src=frame.dataset.src;frame.hidden=false;this.parentElement.hidden=true">Accepter et afficher Facebook</button>
+          </div>
+          <iframe hidden data-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61596272487937&amp;tabs=timeline&amp;width=300&amp;height=400&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false" title="Actualités Facebook de Pilat l'Oeuf" width="300" height="400" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <p><a href="https://www.facebook.com/profile.php?id=61596272487937" target="_blank" rel="noopener">Ouvrir notre page sur Facebook →</a></p>
+        </aside>
+      </div>
     </div>
   </section>
 </main>
